@@ -1,4 +1,12 @@
-<h1>Hello world!</h1>
+<div [ngSwitch]="role">
+  <div *ngSwitchCase="'Admin'">
+    Admin
+  </div>
+  <div *ngSwitchDefault>
+    You are not authorized to view this page
+  </div>
+</div>
 <!--<app-rooms></app-rooms>-->
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
+

@@ -1,6 +1,8 @@
 Angular
 ---
 
+#### Current part : 3:33:49
+
 ## Source
 
 - [Angular for beginners course](https://www.youtube.com/watch?v=3qBXWUpoPHo&t=1s)

@@ -4,7 +4,7 @@ import {RoomsComponent} from "./rooms/rooms.component";
 // import {LoginComponent} from "./login/login.component";
 
 const routes: Routes = [
-  {path: 'rooms', component: RoomsComponent},
+  {path: '', component: RoomsComponent},
 ];
 
 @NgModule({
