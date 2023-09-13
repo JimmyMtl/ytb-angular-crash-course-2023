@@ -2,32 +2,31 @@
   <h1>Welcome to {{hotelName}}</h1>
   <div [hidden]="hideRooms">
     <h2>Number of rooms:</h2>
-    <!--  <div [innerText]="numberOfRooms"></div>-->
-    {{rooms.availableRooms ?? "No rooms"}}
+<!--    {{roomsList | json}}-->
+
     <div *ngIf="rooms.availableRooms > 0">
       <h3>Rooms List</h3>
       <table>
         <tr>
           <th>Idx</th>
-          <th>Even/Odd</th>
           <th>Room Number</th>
           <th>Room Type</th>
           <th>Room Price</th>
           <th>Room Amenities</th>
           <th>Checkin Times</th>
-          <th>Checkou Times</th>
+          <th>Checkout Times</th>
 
         </tr>
-        <tr *ngFor="let room of roomsList; let e=even; let o=odd;let i=index" id="{{i}}"
+        <tr *ngFor="let room of roomsList | slice: 0:1; let e=even; let o=odd;let i=index" id="{{i}}"
             ngClass="{{e ? 'even' : 'odd'}}">
           <td>{{i}}</td>
-          <td>{{e ? "Even" : "Odd"}}</td>
           <td>{{room.roomNumber}}</td>
           <td>{{room.roomType}}</td>
-          <td>{{room.price}}</td>
+          <td>{{room.price | currency: 'EUR'}}</td>
           <td>{{room.amenities}}</td>
-          <td>{{room.checkInTime}}</td>
-          <td>{{room.checkOutTime}}</td>
+          <td>{{room.checkInTime | date}}</td>
+          <td>{{room.checkOutTime | date}}</td>
+
         </tr>
       </table>
     </div>

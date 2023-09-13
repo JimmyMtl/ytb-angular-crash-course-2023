@@ -10,14 +10,16 @@ html {
   box-sizing: border-box;
 
 }
-
+main{
+  position: relative;
+}
 body {
   padding: 1rem;
   width: 100%;
   min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //text-align: center;
   background: linear-gradient(#000, #012);
 }

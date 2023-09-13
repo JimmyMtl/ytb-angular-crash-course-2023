@@ -1,5 +1,10 @@
 .roomContainer {
-
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   .toggleBtn {
     padding: .5rem 1rem;
     border-radius: 4px;
@@ -17,6 +22,9 @@
 
   th {
     background: #303a46;
+  }
+
+  th, td {
     padding: .5rem 1rem;
   }
 
@@ -29,4 +37,5 @@
       background: #213042;
     }
   }
+
 }
