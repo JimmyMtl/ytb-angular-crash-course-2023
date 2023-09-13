@@ -1,7 +1,7 @@
 Angular
 ---
 
-#### Current part : 3:33:49
+#### Current part : 4:01:21
 
 ## Source
 
